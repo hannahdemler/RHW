@@ -1,0 +1,52 @@
+---
+title: "Homework 2"
+author: "Hannah Demler"
+date: "9/1/2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+**Solve system of equations**  
+**2x + 5y = 33**  
+**x + 3y = 19**  
+
+x = 19 - 3y  
+
+2(19 - 3y) + 5y = 33
+
+```{r}
+2*19
+2*3
+```
+38 - 6y + 5y = 33
+```{r}
+-6+5
+```
+38 - y = 33
+```{r}
+38-33
+```
+**y = 5**  
+x + 3(5) = 19
+```{r}
+19-(3*5)
+```
+**x = 4**  
+
+**Mean of vector including values from 1:100**
+```{r}
+vector <- 1:100
+sum<- sum(vector)
+sum/100
+```
+**To install package dplyr** use code `install.packages("dplyr")`  
+
+**Create data frame**
+
+```{r}
+mat<- matrix(c("A","B","C","D","D","E","F","G"),ncol=4, byrow=T)
+mat
+dataframe<- as.data.frame(mat)
+dataframe
+```
+

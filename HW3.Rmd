@@ -1,0 +1,37 @@
+---
+title: "HW3"
+author: "Hannah Demler"
+date: "9/9/2020"
+output: html_document
+---
+**1**  
+**Write function to calculate mean**  
+```{r}
+calc_mean<- function(values){
+  mean<- (sum(values))/(length(values))
+  return(mean)
+  }
+```
+  
+**2**  
+**Find the range of variable Year**  
+```{r}
+range(key_crop_yields$Year)
+```
+  
+**3**  
+**Calculate mean Maize yield (tonnes/hectare)**  
+```{r}
+cropyields<-na.omit(key_crop_yields)
+calc_mean(cropyields$Maize..tonnes.per.hectare.)
+```
+**4**  
+**Save file with name of variable "Entity"**  
+```{r}
+Entity<- read.csv("key_crop_yields.csv")
+Entity 
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
